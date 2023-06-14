@@ -49,7 +49,7 @@ include_once 'header.php';
 </banner>
 
 <h2>
-    <center>ALL SWITCHES</center>
+    <center>ALL TOYS</center>
 </h2>
 
 <div class="container">

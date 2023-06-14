@@ -30,14 +30,6 @@ if (isset($_POST['btnRegister'])) {
       <h2>Register</h2>
       <form id="form1" name="form1" method="post" action="" class="form-horizontal needs-validation" role="form">
             <div class="form-group">
-                  <label for="txtTen" class="col-sm-2 control-label">Username(*): </label>
-                  <div class="col-sm-10">
-                        <input type="text" name="txtUsername" id="txtUsername" class="form-control" placeholder="Username" value="" required />
-
-                  </div>
-            </div>
-
-            <div class="form-group">
                   <label for="" class="col-sm-2 control-label">Password(*): </label>
                   <div class="col-sm-10">
                         <input type="password" name="txtPass1" id="txtPass1" class="form-control" placeholder="Password" required />

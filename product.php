@@ -3,7 +3,7 @@ include_once 'header.php';
 ?>
 
 <h2>
-    <center>ALL SWITCHES</center>
+    <center>ALL TOYS</center>
 </h2>
 <div class="container">
     <div class="row">

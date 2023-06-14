@@ -10,7 +10,7 @@ public function __construct()
     $this->server = "localhost";
     $this->user = "root";
     $this->password = "";
-    $this->dbName = "switchitall";
+    $this->dbName = "atn_company";
 }
 
 //option1

@@ -15,7 +15,7 @@ include_once 'header.php';
         <center>
             <h6 style="display: inline-block;">
                 <div class="cat-box">
-                    <a href="category.php?cat_id=<?= $row['cat_id'] ?>"><?= $row['cat_name'] ?> Switches</a>
+                    <a href="category.php?cat_id=<?= $row['cat_id'] ?>"><?= $row['cat_name'] ?> Toys</a>
                 </div>
             </h6>
             

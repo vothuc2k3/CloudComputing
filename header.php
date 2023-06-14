@@ -45,6 +45,7 @@ ob_start();
             </button>
             <div class="collapse navbar-collapse" id="navbarMain">
                 <div class="navbar-nav">
+
                     <a href="product.php" class="nav-link header-function"><b>PRODUCT</b></a>
                     <div class="dropdown header-function">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b>CATEGORY</b></a>
@@ -58,13 +59,21 @@ ob_start();
 
                             while ($row = $re->fetch_assoc()) :
                             ?>
-                                <a class="dropdown-item" href="category.php?cat_id=<?= $row['cat_id'] ?>"><?= $row['cat_name'] ?> Switches</a>
+                                <a class="dropdown-item" href="category.php?cat_id=<?= $row['cat_id'] ?>"><?= $row['cat_name'] ?> Toys</a>
                             <?php
                             endwhile;
                             ?>
                             <a class="dropdown-item" href="allcat.php"> <b>All Categories</b> </a>
                         </div>
                     </div>
+                    <div class="dropdown header-function">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b>MANAGEMENT</b></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="addcat.php"> <b>Add category</b> </a>
+                            <a class="dropdown-item" href="addprod.php"> <b>Add product</b> </a>
+                        </div>
+                    </div>
+
                     <a href="cart.php" class="nav-link header-function"><b>MY CART</b></a>
                 </div>
                 <div class="navbar-nav ms-auto">
