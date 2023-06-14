@@ -1,0 +1,40 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.nav-link{
+    font-size: 20px;
+    width: auto;
+    color: black;
+}
+nav{
+    margin: auto;
+    padding: auto;
+    color: black;
+    position: relative;
+}
+.card-title{
+    color: #49C5B6;
+}
+.navbar-brand{
+    font-family:Brush Script MT;
+    font-size: 40px;
+    color: greenyellow;
+    margin: auto;
+}
+.btn-primary{
+    color: #212529;
+    background-color: #7cc;
+    border-color: #5bc2c2
+}
+h1{
+    margin-bottom: 0px;
+}
+.navbar{
+    margin-bottom: 25px;
+}
+body{
+    background-color: #a8dadc;
+}
+.nav-link .header-function::hover{
+    background-color: #3b619e;
+}
