@@ -28,13 +28,7 @@ include_once 'header.php';
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./images/banner/banner_keyboard.jpg" class="d-block w-100" alt="..." width="500px" height="850px">
-            </div>
-            <div class="carousel-item">
-                <img src="./images/banner/banner_keyboard2.jpg" class="d-block w-100" alt="..." width="500px" height="850px">
-            </div>
-            <div class="carousel-item">
-                <img src="./images/banner/banner_keyboard3.jpg" class="d-block w-100" alt="..." width="500px" height="850px">
+                <img src="./images/banner/banner.jpg" class="d-block w-100" alt="..." width="500px" height="850px">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
