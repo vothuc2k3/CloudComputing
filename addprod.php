@@ -27,7 +27,7 @@
             $stmt = $db_link->prepare($sqlInsert);
             $execute = $stmt->execute(array("$pid", "$pname", "$price", "$desc", "$quantity", "$pimg", "$cid"));
             if ($execute) {
-                header("Location: categorylist.php");
+                header("Location: index.php");
                 ob_clean();
             } else {
             }
@@ -37,7 +37,7 @@
             $stmt = $db_link->prepare($sqlUpdate);
             $execute = $stmt->execute(array("$pid", "$pname", "$price", "$desc", "$quantity", "$pimg", "$cid"));
             if ($execute) {
-                header("Location: categorylist.php");
+                header("Location: index.php");
             } else {
                 echo "Failed" . $execute;
             }
@@ -96,7 +96,7 @@
         <div class="form-group pb-3">
             <div class="col-sm-offset-2 col-sm-10">
                 <input type="submit" class="btn btn-primary" name="<?php echo (isset($_GET["prod_id"])) ? "btnEdit" : "btnAdd"; ?>" id="btnAction" value='<?php echo (isset($_GET["prod_id"])) ? "Edit" : "Add new"; ?>' />
-                <input type="button" class="btn btn-primary" name="btnIgnore" id="btnIgnore" value="Back to list" onclick="window.location.href='categorylist.php'" />
+                <input type="button" class="btn btn-primary" name="btnIgnore" id="btnIgnore" value="Back to list" onclick="window.location.href='index.php'" />
             </div>
         </div>
 
