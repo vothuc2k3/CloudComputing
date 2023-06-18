@@ -3,8 +3,8 @@
 
     include_once "header.php";
 
-    $conn = new Connect();
-    $db_link = $conn->connectToMySQL();
+    $c = new Connect();
+    $db_link = $c->connectToPDO();
     
     if (isset($_GET['prod_id'])) {
         $value = $_GET['prod_id'];
@@ -29,10 +29,9 @@
         if (isset($_POST['btnAdd'])) {
             $pid = $_POST['prod_id'];
             $sqlInsert = "INSERT INTO `001_prod`(`prod_id`, `prod_name`, `price`, `description`, `quantity`, `prod_img`, `cat_id`) VALUES (?,?,?,?,?,?,?)";
-            $stmt = $db_link->prepare($sqlInsert);
-            $execute = $stmt->execute(array($pid, $pname, $price, $desc, $quantity, $pimg, $cid));
-            
-            if ($execute) {
+            $re = $db_link->prepare($sqlInsert);
+            $stmt = $re->execute(array($pid, $pname, $price, $desc, $quantity, $pimg, $cid));
+            if ($stmt) {
                 ob_clean(); // Clean the output buffer
                 header("Location: index.php");
                 // exit();

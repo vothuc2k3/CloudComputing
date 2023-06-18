@@ -4,7 +4,6 @@ include_once './connect.php/connect.php';
 if (isset($_POST['btnRegister'])) {
       $c = new Connect();
       $dblink = $c->connectToPDO();
-
       $gender = $_POST['grpGender'];
       $fname = $_POST['txtFullname'];
       $email = $_POST['txtEmail'];
