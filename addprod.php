@@ -26,7 +26,7 @@
         $pimg = $_POST['prod_img'];
         $cid = $_POST['prod_cat'];
         
-        if (isset($_POST['btnAdd'])) {
+        if (isset($_POST['Add'])) {
             $pid = $_POST['prod_id'];
             $sqlInsert = "INSERT INTO `001_prod`(`prod_id`, `prod_name`, `price`, `description`, `quantity`, `prod_img`, `cat_id`) VALUES (?,?,?,?,?,?,?)";
             $stmt = $db_link->prepare($sqlInsert);
@@ -112,7 +112,7 @@
         
         <div class="form-group pb-3">
             <div class="col-sm-offset-2 col-sm-10">
-                <input type="submit" class="btn btn-primary" name="<?php echo isset($_GET['prod_id']) ? 'btnEdit' : 'btnAdd'; ?>" id="btnAction" value="<?php echo isset($_GET['prod_id']) ? 'Edit' : 'Add new'; ?>" />
+                <input type="submit" class="btn btn-primary" name="Add" />
                 <input type="button" class="btn btn-primary" name="btnIgnore" id="btnIgnore" value="Back to list" onclick="window.location.href='index.php'" />
             </div>
         </div>
