@@ -4,7 +4,7 @@
     include_once "header.php";
 
     $conn = new Connect();
-    $db_link = $conn->connectToPDO();
+    $db_link = $conn->connectToMySQL();
     
     if (isset($_GET['prod_id'])) {
         $value = $_GET['prod_id'];
