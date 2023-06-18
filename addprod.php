@@ -35,7 +35,7 @@
             if ($execute) {
                 ob_clean(); // Clean the output buffer
                 header("Location: index.php");
-                exit();
+                // exit();
             } else {
                 echo "Failed";
             }
