@@ -47,7 +47,7 @@
             
             if ($execute) {
                 header("Location: index.php");
-                exit();
+                // exit();
             } else {
                 echo "Failed";
             }
