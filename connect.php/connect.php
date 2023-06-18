@@ -7,10 +7,10 @@ public $dbName;
 
 public function __construct()
 {
-    $this->server = "localhost";
-    $this->user = "root";
-    $this->password = "";
-    $this->dbName = "atn_company";
+    $this->server = "ohunm00fjsjs1uzy.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+    $this->user = "limf7312zi7wycmo";
+    $this->password = "uin2ub4oq8t99052";
+    $this->dbName = "qse4pbegq27yms3f";
 }
 
 //option1

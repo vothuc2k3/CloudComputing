@@ -121,5 +121,5 @@
 
 <?php
     include_once 'footer.php';
-    ob_end_flush(); // Flush the output buffer
+    ob_end_flush();
 ?>
