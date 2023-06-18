@@ -1,5 +1,5 @@
 <?php
-    ob_start(); // Start output buffering
+    ob_start(); 
 
     include_once "header.php";
 
