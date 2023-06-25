@@ -1,7 +1,6 @@
 <?php
 include_once "header.php";
 ob_flush();
-
 $conn = new Connect();
 $db_link = $conn->connectToPDO();
 if (isset($_GET['cat_id'])) :
@@ -23,7 +22,7 @@ if (isset($_POST['txtName'])) :
         $execute = $stmt->execute(array("$cid", "$cname"));
         if ($execute) {
             header("Location: categorylist.php");
-            // ob_clean();
+            ob_clean();
         } else {
         }
     else :
